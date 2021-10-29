@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    background-color: #edeef6;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+/* Header/Navigation */
+
+header {
+    padding: 20px;
+    background-color: #32343d;
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+    color: #32343d;
+    margin-left: 60px;
+}
+
+header div {
+    background-color: #92cccd;
+    position: relative;
+    right: 35px;
+    padding: 5px;
+    margin: 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px;
+    font-weight: lighter;
+    font-size: 25px;
+    color: #92cccd;
+    position: relative;
+    top: 20px;
+}
+
+header nav ul li a:hover {
+    background: #92cccd;
+    color: #32343d;
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+/* Hero Starts */
+
+.hero {
+    background-image: url(./pp-hero.jpg);
+    background-size: cover;
+    background-position: 100%;
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero h2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: flex-start;
+}
+
+.hero div h2 {
+    background-color: #92cccd;
+    color: #32343d;
+    padding: 15px;
+}
+
+.hero .photo img {
+    position: relative;
+    z-index: 98;
+    top: 2px;
+    right: 750px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+/* Hero Ends */
+
+/* Footer */
+
+footer {
+    color: #435877;
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .contact-info ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+footer .contact-info ul li a {
+    padding: 10px;
+    font-weight: lighter;
+    font-size: 15px;
+    color: #435877;
+    position: relative;
+    top: 20px;
+}
+
+footer .contact-info ul li a:hover {
+    background: #32343d;
+    color: #92cccd;
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+/* Footer Ends */
