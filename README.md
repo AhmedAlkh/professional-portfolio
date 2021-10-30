@@ -1,17 +1,25 @@
 # professional-portfolio
 ## Updates
-### Header/Nav
-- Resume has been linked to resume tab in navigation
-- css added to header/nav
-- added hover to links
+
+### General changes
+- added grid div to hold content
+- comments added for organization
+- created grid
 
 ### Hero
 - Hero image added
-- Subtitle added but needs to be postitioned properly
-- personal photo added but needs to be positioned properly
+- Subtitle has been postitioned properly
+- personal photo has been positioned properly
+- flex box properties updated in CSS
 
-### Footer
-- Contact Me section moved into footer
-- Contact information added
-- Contact information formated
-- added hover to links
+### About me
+- Bio text filled in, placeholder text removed
+- title and text color modified
+- flex box added, format needs to be fixed
+- div classes modified
+- about me section moved into grid div in html
+- about me section moved into grid section in css
+
+### Work Section
+- work section moved into grid
+- added divs for grid elements

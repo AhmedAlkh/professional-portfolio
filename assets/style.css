@@ -73,34 +73,92 @@ header nav ul li a:hover {
     background-attachment: fixed;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
 }
 
-.hero h2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: right;
-    align-items: flex-start;
-}
-
-.hero div h2 {
+.hero .subtitle h2 {
     background-color: #92cccd;
     color: #32343d;
     padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    margin-right: 50px;
 }
 
 .hero .photo img {
     position: relative;
     z-index: 98;
-    top: 2px;
-    right: 750px;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
 }
 
 /* Hero Ends */
+
+/* Grid */
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "grid1 grid2 grid2"
+    "grid3 grid4 grid4"
+    ". grid4 grid4"
+    ". grid5 grid6"
+    ". grid7 grid8";
+}
+
+/* About Me - INSIDE GRID */
+.bio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.grid1 {
+    color: #435877;
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: grid1;
+}
+
+.grid2 {
+    color: #435877;
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: grid2;
+}
+/* About Me Ends - INSIDE GRID*/
+
+.grid3 {
+    grid-area: grid3;
+}
+
+.grid4 {
+    grid-area: grid4;
+}
+
+.grid5 {
+    grid-area: grid5;
+}
+
+.grid6 {
+    grid-area: grid6;
+}
+
+.grid7 {
+    grid-area: grid7;
+}
+
+.grid8 {
+    grid-area: grid8;
+}
+
+/* Grid Ends */
 
 /* Footer */
 
