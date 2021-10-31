@@ -156,7 +156,11 @@ header nav ul li a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     grid-area: inner-grid1;   
-   
+    opacity: 0.7;
+}
+
+.inner-grid1:hover {
+    opacity: 1;
 }
 
 .inner-grid2 {
@@ -164,25 +168,49 @@ header nav ul li a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     grid-area: inner-grid2;    
+    opacity: 0.7;
 }
+
+.inner-grid2:hover {
+    opacity: 1;
+}
+
 .inner-grid3 {
-    background: url("surf-report.jpg");
+    background: url("./calculator.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     grid-area: inner-grid3;    
+    opacity: 0.7;
 }
+
+.inner-grid3:hover {
+    opacity: 1;
+}
+
 .inner-grid4 {
-    background: url("surf-report.jpg");
+    background: url("./pastel-puzzles.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     grid-area: inner-grid4;    
+    opacity: 0.7;
 }
+
+.inner-grid4:hover {
+    opacity: 1;
+}
+
 .inner-grid5 {
-    background: url("surf-report.jpg");
+    background: url("./run-buddy-screenshot.png");
     background-repeat: no-repeat;
     background-size: cover;
     grid-area: inner-grid5;    
+    opacity: 0.7;
 }
+
+.inner-grid5:hover {
+    opacity: 1;
+}
+
 
 .inner {
     border: 5px solid #92cccd;
