@@ -64,6 +64,8 @@ header nav ul li a:hover {
     text-shadow: none;
 }
 
+/* Header/Navigation ends */
+
 /* Hero Starts */
 
 .hero {
@@ -99,47 +101,100 @@ header nav ul li a:hover {
 
 /* Grid */
 
-
-.grid {
+.container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 20% 40% 40%; 
+    column-gap: 8px;
+    row-gap: 20px;
     grid-template-areas:
     "grid1 grid2 grid2"
     "grid3 grid4 grid4"
-    ". grid4 grid4"
-    ". grid5 grid6"
-    ". grid7 grid8";
+    "grid5 grid6 grid6";
+    padding: 40px;
+
 }
 
-/* About Me - INSIDE GRID */
 .bio {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.grid1 {
-    color: #435877;
+.grid1 {    
     display: flex;
     flex-wrap: wrap;
-    grid-area: grid1;
+    grid-area: grid1;       
 }
 
 .grid2 {
     color: #435877;
     display: flex;
     flex-wrap: wrap;
-    grid-area: grid2;
+    grid-area: grid2;    
 }
-/* About Me Ends - INSIDE GRID*/
 
 .grid3 {
     grid-area: grid3;
 }
 
 .grid4 {
-    grid-area: grid4;
+    grid-area: grid4; 
+    column-gap: 25px;
+    row-gap: 25px;    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 150px 150px;
+    grid-template-areas:
+    "inner-grid1 inner-grid1"
+    "inner-grid2 inner-grid3"
+    "inner-grid4 inner-grid5";
+    padding: 40px;  
+}
+
+.inner-grid1 {
+    background: url("surf-report.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: inner-grid1;   
+   
+}
+
+.inner-grid2 {
+    background: url("led-wall.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: inner-grid2;    
+}
+.inner-grid3 {
+    background: url("surf-report.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: inner-grid3;    
+}
+.inner-grid4 {
+    background: url("surf-report.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: inner-grid4;    
+}
+.inner-grid5 {
+    background: url("surf-report.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: inner-grid5;    
+}
+
+.inner {
+    border: 5px solid #92cccd;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: flex-start;
+    vertical-align: bottom;
+    flex-direction: column;
+    flex-basis: auto;
+    text-decoration: none;
+    color: #32343d;
 }
 
 .grid5 {
@@ -148,21 +203,39 @@ header nav ul li a:hover {
 
 .grid6 {
     grid-area: grid6;
+    justify-content: space-evenly;
 }
 
-.grid7 {
-    grid-area: grid7;
+.title {
+    color: #435877;    
+    align-items: right;
+    justify-content: right; 
+    padding-top: 15px;
+    font-size: 20px;
+}
+.content {
+    border-left: 3px solid #435877;  
+    margin-bottom: 25px; 
+    padding: 25px;
+}
+p {
+    margin-bottom: 25px;
 }
 
-.grid8 {
-    grid-area: grid8;
+.project-info {
+    background:  #92cccd;    
+    margin-bottom: 25px;    
+    display: inline-block;
+    flex-basis: auto;
+    padding: 10px;
 }
 
-/* Grid Ends */
+.project-info h3 {
+    font-size: 10px;
+    font-weight: normal
+}
 
-/* Footer */
-
-footer {
+.links {
     color: #435877;
     background-size: cover;
     background-position: 80%;
@@ -172,15 +245,21 @@ footer {
     justify-content: space-between;
 }
 
-footer .contact-info ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
+.links .contact-info {
+    width: 100%;
+    margin-bottom: 30px;    
 }
 
-footer .contact-info ul li a {
+.links .contact-info ul {
+    display: flex;
+    flex-wrap: wrap;    
+    align-items: stretch;
+    list-style: none;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.links .contact-info ul li a {
     padding: 10px;
     font-weight: lighter;
     font-size: 15px;
@@ -189,11 +268,15 @@ footer .contact-info ul li a {
     top: 20px;
 }
 
-footer .contact-info ul li a:hover {
+.links .contact-info ul li a:hover {
     background: #32343d;
     color: #92cccd;
     border-radius: 15px;
     text-shadow: none;
 }
 
-/* Footer Ends */
+h1 { 
+    text-align: right;
+}
+
+/* Grid Ends */
