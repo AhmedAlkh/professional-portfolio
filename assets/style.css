@@ -21,6 +21,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     position: sticky;
+    position: -webkit-sticky;
     top: 0;
     z-index: 999;
 }
@@ -308,3 +309,37 @@ h1 {
 }
 
 /* Grid Ends */
+
+/* MEDIA QUERY */
+    
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+    
+    .grid1 h1{
+        font-size: 30px;
+    }
+    
+    .grid3 h1 {
+        font-size: 30px;
+    }
+
+    .grid5 h1 {
+        font-size: 30px;
+    }
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+    
+    .grid1 h1{
+        font-size: 15px;
+    }
+    
+    .grid3 h1 {
+        font-size: 15px;
+    }
+
+    .grid5 h1 {
+        font-size: 15px;
+    }
+  }

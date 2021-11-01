@@ -1,12 +1,10 @@
 # professional-portfolio
-## Updates
 
-### General changes
-- changed pictures for work section
-- Run Buddy webpage deploys when link is clicked
-- added "coming soon" to work sections that are not complete yet
-- added titles to pictures in work section
-- made pictures for work section light up when mouse hovers over (opacity)
+## Objective:
+Create a professional portfolio from scratch. This portfolio will be used to showcase my skills and give a breif introduction of myself. Applications on the web page will be updated and linked as they are completed throughout the course.
 
-### TO DO
-- add media queries
+## Website url: 
+https://ahmedalkh.github.io/professional-portfolio/
+
+## Preview:
+![screenshot](https://github.com/AhmedAlkh/professional-portfolio/blob/main/portfolio-screenshot.png?raw=true)
